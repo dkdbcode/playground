@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSH | Homepage</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+	<div class="promo-banner">
+		<p>Free Shipping on your first order and any order over $49 <a href=""> Click to see details</a></p>
+	</div>
+    <div class="nav-bar row">
+        <div class="my-account col-md-1">
+			<a class="login" href="/login"> Log In </a>
+		</div>
+		<div class="nav-items col-md-3">
+			<nav>
+				<ul class="nav-menu">
+					<li class="menu-item">
+						<a class="#">Shop</a>
+						<ul class="nav-submenu">
+							<li>
+								<label>Drinks</label>
+								<ul class="menu-submenu">
+									<li><a href="#">All</a></li>
+									<li><a href="#">Juices</a></li>
+									<li><a href="#">Cleanse Packs</a></li>
+									<li><a href="#">Coffee</a></li>
+									<li><a href="#">Water</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<label>Goods</label>
+								<ul class="menu-submenu">
+									<li><a href="#">All</a></li>
+									<li><a href="#">Teas</a></li>
+									<li><a href="#">Coffee</a></li>
+									<li><a href="#">Snacks</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<label>Boxes</label>
+								<ul class="menu-submenu">
+									<li><a href="#">All</a></li>
+									<li><a href="#">Favorites Box</a></li>
+									<li><a href="#">Detox Box</a></li>
+									<li><a href="#">Lorem Ipsum</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<label>Cleanses</label>
+								<ul class="menu-submenu">
+									<li><a href="#">All</a></li>
+									<li><a href="#">Soft Cleanse</a></li>
+									<li><a href="#">Semi Cleanse</a></li>
+									<li><a href="#">Hard Cleanse</a></li>
+								</ul>
+							</li>
+
+							<li class="nav-image">
+								<a href="/"><img src="http://via.placeholder.com/350x150" /></a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="menu-item"><a class="#">Cleanses</a></li>
+					<li class="menu-item"><a class="#">Build A Box</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="site-logo col-md-4">
+			<a class="logo" title="Juice Server Here" href="/"></a>
+		</div>
+		<div class="support-menu col-md-3">
+			<nav>
+				<ul>
+					<li>
+						<a class="#">The Unconventional</a>
+						
+					</li>
+					<li><a class="#">Who We Are</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="shopping-cart col-md-1">
+			<span> Cart(0)</span>
+		</div>
+    </div>
+	<div class="hp-content">
+		@RenderBody()
+		<hr />
+	</div>
+        <footer>
+			<div class="footer-nav container">
+				<div class="row">
+					<div class="quad-1 newsletter col-md-6">
+						<h3>Let's Be Friends with Benefits</h3>
+						<div class="input-group">
+							<input class="form-control" type="email" name="email" placeholder="Email Address">
+							<span class="btn-input input-group-button">
+								<input type="submit" class="btn cta-submit" value="OK!">
+							</span>
+						</div>
+					</div>
+					<div class="quad-2 col-md-2">
+						<nav>
+							<ul class="nav-menu">
+								<li class="menu-item">
+									<label>Lorem Ipsum</label>
+									<ul class="nav-submenu">
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+					<div class="quad-3 col-md-2">
+						<nav>
+							<ul class="nav-menu">
+								<li class="menu-item">
+									<label>Lorem Ipsum</label>
+									<ul class="nav-submenu">
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="quad-4 col-md-2">
+						<nav>
+							<ul class="nav-menu">
+								<li class="menu-item">
+									<label>Lorem Ipsum</label>
+									<ul class="nav-submenu">
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+										<li><a href="#">Lorem Ipsum</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				
+			</div>
+			<div class="footer-meta">&copy Lorem ipsum dolor sit amet</div>
+        </footer>
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
